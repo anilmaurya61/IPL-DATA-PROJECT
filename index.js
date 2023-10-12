@@ -1,29 +1,39 @@
 const getMatchesPerYear = require('./src/server/1-matches-per-year.js');
 const numOfMatchesWonPerTeamPerYear = require('./src/server/2-matches-won-per-team-per-year.js');
+const { getExtraRunConceded, calExtraRunConceded } = require('./src/server/3-extra-run-conceded-per-team-2016.js')
+const { getEconomicalBowlerId, getEconomicalBowler } = require('./src/server/4-Top-10-economical-bowlers-year-2015.js')
 const csv = require('csv-parser');
 const fs = require('fs');
 
 
-    const results = [];
-    fs.createReadStream('./src/data/matches.csv')
-        .pipe(csv({}))
-        .on('data', (data) => results.push(data))
-        .on('end', () => {
-            let data = getMatchesPerYear(results);
-            const filePath = './src/public/output';
-            if (!fs.existsSync(filePath)) {
-                fs.mkdirSync(filePath, { recursive: true });
-            }
-            fs.writeFileSync(filePath + '/matches-per-year.json', JSON.stringify(data, null, 2));
+const matches = [];
+fs.createReadStream('./src/data/matches.csv')
+    .pipe(csv({}))
+    .on('data', (data) => matches.push(data))
+    .on('end', () => {
+        let data = getMatchesPerYear(matches);
+        const filePath = './src/public/output';
+        if (!fs.existsSync(filePath)) {
+            fs.mkdirSync(filePath, { recursive: true });
+        }
+        fs.writeFileSync(filePath + '/matches-per-year.json', JSON.stringify(data, null, 2));
 
 
-            data = numOfMatchesWonPerTeamPerYear(results);
-            console.log(data);
-            fs.writeFileSync(filePath + '/matches-won-per-team-per-year.json', JSON.stringify(data, null, 2));
+        data = numOfMatchesWonPerTeamPerYear(matches);
+        // console.log(data);
+        fs.writeFileSync(filePath + '/matches-won-per-team-per-year.json', JSON.stringify(data, null, 2));
 
-
-
-        });
+        const matchId = getExtraRunConceded(matches);
+        
+        const deliveries = [];
+        fs.createReadStream('./src/data/deliveries.csv')
+            .pipe(csv({}))
+            .on('data', (data) => deliveries.push(data))
+            .on('end', () => {
+                const extraRunConceded = calExtraRunConceded(deliveries, matchId);
+                fs.writeFileSync(filePath + '/extra-run-conceded-per-team-2016.json', JSON.stringify(extraRunConceded, null, 2));
+            });
+    });
 
 
 
