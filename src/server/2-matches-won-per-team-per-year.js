@@ -12,7 +12,6 @@ function numOfMatchesWonPerTeamPerYear(matches) {
             matchesWonPerTeamPerYear[match.season][match.winner] = 1;
         }
     })
-    // console.log(matchesWonPerTeamPerYear);
     return matchesWonPerTeamPerYear;
 }
 

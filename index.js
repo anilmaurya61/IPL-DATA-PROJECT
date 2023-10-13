@@ -1,7 +1,8 @@
 const getMatchesPerYear = require('./src/server/1-matches-per-year.js');
 const numOfMatchesWonPerTeamPerYear = require('./src/server/2-matches-won-per-team-per-year.js');
-const { getExtraRunConceded, calExtraRunConceded } = require('./src/server/3-extra-run-conceded-per-team-2016.js')
-const { getEconomicalBowlerId, getEconomicalBowler } = require('./src/server/4-Top-10-economical-bowlers-year-2015.js')
+const calExtraRunConceded = require('./src/server/3-extra-run-conceded-per-team-2016.js')
+const getEconomicalBowler = require('./src/server/4-Top-10-economical-bowlers-year-2015.js')
+const getMatchIdByYear = require('./src/utils/Helpers.js')
 const csv = require('csv-parser');
 const fs = require('fs');
 
@@ -20,21 +21,21 @@ fs.createReadStream('./src/data/matches.csv')
 
 
         data = numOfMatchesWonPerTeamPerYear(matches);
-        // console.log(data);
         fs.writeFileSync(filePath + '/matches-won-per-team-per-year.json', JSON.stringify(data, null, 2));
 
-        const matchId = getExtraRunConceded(matches);
         
         const deliveries = [];
         fs.createReadStream('./src/data/deliveries.csv')
             .pipe(csv({}))
             .on('data', (data) => deliveries.push(data))
             .on('end', () => {
+                const matchId = getMatchIdByYear(matches,2016);
                 const extraRunConceded = calExtraRunConceded(deliveries, matchId);
                 fs.writeFileSync(filePath + '/extra-run-conceded-per-team-2016.json', JSON.stringify(extraRunConceded, null, 2));
+
+                matchId = getMatchIdByYear(matches,2015);
+                const economicalBowler= getEconomicalBowler(deliveries, matchId);
+                fs.writeFileSync(filePath + '/top-10-economical-bowlers-year-2015.json', JSON.stringify(economicalBowler, null, 2));
             });
     });
-
-
-
 

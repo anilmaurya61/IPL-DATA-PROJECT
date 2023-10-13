@@ -1,13 +1,3 @@
-function getEconomicalBowlerId(deliveries, matches){
-    let matchId = [];
-    matches.forEach((match)=>{
-        if(match.season == 2015){
-            matchId.push(match.id);
-        }
-    })
-    return matchId;
-}
-
 function getEconomicalBowler(deliveries, matchId){
     let bowler = {};
     matchId.forEach((id)=>{
@@ -26,7 +16,6 @@ function getEconomicalBowler(deliveries, matchId){
             }
         })
     });
-    console.log(bowler);
 }
 
-module.exports = { getEconomicalBowlerId, getEconomicalBowler };
+module.exports = getEconomicalBowler;

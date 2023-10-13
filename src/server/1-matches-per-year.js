@@ -8,7 +8,6 @@ function getMatchesPerYear(matches){
             matchesPerYear[match.season] = 1;
         }
     });
-        // console.log(matchesPerYear);
     return matchesPerYear;
 }
 

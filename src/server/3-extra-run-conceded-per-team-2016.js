@@ -1,14 +1,3 @@
-function getExtraRunConceded(matches){
-    const matchId = [];
-    matches.forEach((match) =>{
-        if(match.season == 2016){
-            matchId.push(match.id);
-        }
-    })
-    // console.log(matchId);
-    return matchId;
-}
-
 function calExtraRunConceded(deliveries, matchId){
     const extraRunConceded = {};
     matchId.forEach((id) =>{
@@ -25,4 +14,4 @@ function calExtraRunConceded(deliveries, matchId){
     })
     return extraRunConceded;
 }
-module.exports = {getExtraRunConceded, calExtraRunConceded}; 
+module.exports =  calExtraRunConceded; 
