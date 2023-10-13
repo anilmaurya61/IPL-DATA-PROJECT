@@ -49,7 +49,6 @@ function calculateStrikeRatePerSeason(deliveries, matches) {
         }
         batsmanStrikeRatesPerSeason[season] = batsmanStrikeRates;
     }
-    console.log(batsmanStrikeRatesPerSeason);
     return batsmanStrikeRatesPerSeason;
 }
 
