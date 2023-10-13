@@ -1,4 +1,4 @@
-function getseasonTopPlayerOfTheMatch(matches) {
+function getSeasonTopPlayerOfTheMatch(matches) {
     let seasonPlayerOfTheMatch = {};
     matches.forEach((match) => {
         if (seasonPlayerOfTheMatch[match.season]) {
@@ -14,30 +14,27 @@ function getseasonTopPlayerOfTheMatch(matches) {
     });
 
     let seasonTopPlayerOfTheMatch = {};
-    for(let playerOfTheMatch in seasonPlayerOfTheMatch){
+    for (let playerOfTheMatch in seasonPlayerOfTheMatch) {
         let max = 0;
-        for(let key in seasonPlayerOfTheMatch[playerOfTheMatch]){ 
-            if(Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]) > Number(max)){
+        for (let key in seasonPlayerOfTheMatch[playerOfTheMatch]) {
+            if (Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]) > Number(max)) {
                 max = Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]);
             }
         }
-        
-        for(let key in seasonPlayerOfTheMatch[playerOfTheMatch]){ 
-            console.log(key);
-            if(Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]) == max){
-                if(seasonTopPlayerOfTheMatch[playerOfTheMatch]){
-                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = { name : key};
+
+        for (let key in seasonPlayerOfTheMatch[playerOfTheMatch]) {
+            if (Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]) == max) {
+                if (seasonTopPlayerOfTheMatch[playerOfTheMatch]) {
+                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = { name: key };
                 }
-                else{
+                else {
                     seasonTopPlayerOfTheMatch[playerOfTheMatch] = {};
-                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = {name : key, };
+                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = { name: key };
                 }
             }
         }
     }
-    console.log(seasonTopPlayerOfTheMatch);
-    console.log(seasonPlayerOfTheMatch);
-    return seasonPlayerOfTheMatch;
+    return seasonTopPlayerOfTheMatch;
 }
 
-module.exports = getseasonTopPlayerOfTheMatch;
+module.exports = getSeasonTopPlayerOfTheMatch;

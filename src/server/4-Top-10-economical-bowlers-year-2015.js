@@ -24,7 +24,11 @@ function getEconomicalBowler(deliveries, matchId) {
     let economicalBowlerList = [];
 
     for (let key in bowler) {
-        let economyRate = Number((Number(bowler[key]['totalRuns']) / (Number(bowler[key]['totalFairDeliveries']) / 6)).toFixed(2));
+        const totalRuns = Number(bowler[key]['totalRuns']);
+        const totalDeliveries = Number(bowler[key]['totalFairDeliveries']);
+
+        const runsPerOver = totalRuns / (totalDeliveries / 6);
+        const economyRate = Number(runsPerOver.toFixed(2));
 
         economicalBowlerList.push({
             name: key,
@@ -42,7 +46,6 @@ function getEconomicalBowler(deliveries, matchId) {
             return 1;
         }
     })
-    // console.log(economicalBowlerList.slice(0, 10));
     return economicalBowlerList.slice(0, 10);
 }
 
