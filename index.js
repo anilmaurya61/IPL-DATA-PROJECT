@@ -29,7 +29,7 @@ fs.createReadStream('./src/data/matches.csv')
             .pipe(csv({}))
             .on('data', (data) => deliveries.push(data))
             .on('end', () => {
-                const matchId = getMatchIdByYear(matches,2016);
+                let matchId = getMatchIdByYear(matches,2016);
                 const extraRunConceded = calExtraRunConceded(deliveries, matchId);
                 fs.writeFileSync(filePath + '/extra-run-conceded-per-team-2016.json', JSON.stringify(extraRunConceded, null, 2));
 
