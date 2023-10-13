@@ -1,6 +1,6 @@
 function getNumberOfTimesTeamWonTheTossAndMatch(matches){
 
-    let numberOfTimesTeamWonTheTossAndMatch = [];
+    let numberOfTimesTeamWonTheTossAndMatch = {};
     matches.forEach((match) =>{
         if(match.toss_winner == match.winner) {
             if(numberOfTimesTeamWonTheTossAndMatch[match.toss_winner]){
@@ -13,4 +13,4 @@ function getNumberOfTimesTeamWonTheTossAndMatch(matches){
     return numberOfTimesTeamWonTheTossAndMatch;
 }
 
-module.exports = numberOfTimesTeamWonTheTossAndMatch; 
+module.exports = getNumberOfTimesTeamWonTheTossAndMatch; 
