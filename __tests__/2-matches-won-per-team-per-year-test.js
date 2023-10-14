@@ -1,7 +1,7 @@
 const numOfMatchesWonPerTeamPerYear = require("../src/server/2-matches-won-per-team-per-year");
 
 
-test("played_matches_per_year", () => {
+test("matches won per team per year", () => {
 
     const sampleData = [
         {

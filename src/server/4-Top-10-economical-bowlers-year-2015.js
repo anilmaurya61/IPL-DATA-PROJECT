@@ -49,6 +49,4 @@ function getEconomicalBowler(deliveries, matchId) {
     return economicalBowlerList.slice(0, 10);
 }
 
-
-
 module.exports = getEconomicalBowler;

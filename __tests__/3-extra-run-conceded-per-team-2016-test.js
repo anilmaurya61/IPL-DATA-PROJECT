@@ -1,7 +1,7 @@
 const calExtraRunConceded = require('../src/server/3-extra-run-conceded-per-team-2016')
 const getMatchIdByYear = require('../src/utils/Helpers.js')
 
-test("played_matches_per_year", () => {
+test("extra run conceded per team", () => {
 
     const sampleDataMatches = [
         {
