@@ -1,5 +1,4 @@
 function calculateTotalRunAndDeliveries(deliveries){
-    // let bowler = [];
     let totalRunAndDeliveries = [];
     deliveries.forEach((deliver) =>{
         if(deliveries[deliver.is_super_over] != 0){

@@ -1,862 +1,190 @@
 {
   "2008": {
-    "PA Patel": {
-      "totalRuns": 41,
-      "totalDeliveries": 34,
-      "strikeRate": "120.59"
-    },
-    "S Vidyut": {
-      "totalRuns": 16,
-      "totalDeliveries": 14,
-      "strikeRate": "114.29"
-    },
-    "SK Raina": {
-      "totalRuns": 43,
-      "totalDeliveries": 30,
-      "strikeRate": "143.33"
-    },
-    "JA Morkel": {
-      "totalRuns": 17,
-      "totalDeliveries": 14,
-      "strikeRate": "121.43"
-    },
-    "MS Dhoni": {
-      "totalRuns": 30,
-      "totalDeliveries": 17,
-      "strikeRate": "176.47"
-    },
-    "CK Kapugedera": {
-      "totalRuns": 10,
-      "totalDeliveries": 13,
-      "strikeRate": "76.92"
-    },
-    "S Badrinath": {
-      "totalRuns": 6,
-      "totalDeliveries": 2,
-      "strikeRate": "300.00"
-    },
-    "Niraj Patel": {
-      "totalRuns": 3,
-      "totalDeliveries": 11,
-      "strikeRate": "27.27"
-    },
-    "SA Asnodkar": {
-      "totalRuns": 32,
-      "totalDeliveries": 20,
-      "strikeRate": "160.00"
-    },
-    "Kamran Akmal": {
-      "totalRuns": 6,
-      "totalDeliveries": 7,
-      "strikeRate": "85.71"
-    },
-    "SR Watson": {
-      "totalRuns": 29,
-      "totalDeliveries": 20,
-      "strikeRate": "145.00"
-    },
-    "YK Pathan": {
-      "totalRuns": 60,
-      "totalDeliveries": 40,
-      "strikeRate": "150.00"
-    },
-    "M Kaif": {
-      "totalRuns": 12,
-      "totalDeliveries": 9,
-      "strikeRate": "133.33"
-    },
-    "RA Jadeja": {
-      "totalRuns": 0,
-      "totalDeliveries": 1,
-      "strikeRate": "0.00"
-    },
-    "SK Warne": {
-      "totalRuns": 10,
-      "totalDeliveries": 9,
-      "strikeRate": "111.11"
-    },
-    "Sohail Tanvir": {
-      "totalRuns": 12,
-      "totalDeliveries": 9,
-      "strikeRate": "133.33"
-    }
+    "PA Patel": "120.59",
+    "S Vidyut": "114.29",
+    "SK Raina": "143.33",
+    "JA Morkel": "121.43",
+    "MS Dhoni": "176.47",
+    "CK Kapugedera": "76.92",
+    "S Badrinath": "300.00",
+    "Niraj Patel": "27.27",
+    "SA Asnodkar": "160.00",
+    "Kamran Akmal": "85.71",
+    "SR Watson": "145.00",
+    "YK Pathan": "150.00",
+    "M Kaif": "133.33",
+    "RA Jadeja": "0.00",
+    "SK Warne": "111.11",
+    "Sohail Tanvir": "133.33"
   },
   "2009": {
-    "AC Gilchrist": {
-      "totalRuns": 0,
-      "totalDeliveries": 3,
-      "strikeRate": "0.00"
-    },
-    "TL Suman": {
-      "totalRuns": 11,
-      "totalDeliveries": 12,
-      "strikeRate": "91.67"
-    },
-    "HH Gibbs": {
-      "totalRuns": 57,
-      "totalDeliveries": 51,
-      "strikeRate": "111.76"
-    },
-    "A Symonds": {
-      "totalRuns": 33,
-      "totalDeliveries": 21,
-      "strikeRate": "157.14"
-    },
-    "RG Sharma": {
-      "totalRuns": 26,
-      "totalDeliveries": 24,
-      "strikeRate": "108.33"
-    },
-    "Y Venugopal Rao": {
-      "totalRuns": 0,
-      "totalDeliveries": 2,
-      "strikeRate": "0.00"
-    },
-    "AA Bilakhia": {
-      "totalRuns": 7,
-      "totalDeliveries": 8,
-      "strikeRate": "87.50"
-    },
-    "RJ Harris": {
-      "totalRuns": 9,
-      "totalDeliveries": 5,
-      "strikeRate": "180.00"
-    },
-    "JH Kallis": {
-      "totalRuns": 17,
-      "totalDeliveries": 17,
-      "strikeRate": "100.00"
-    },
-    "MK Pandey": {
-      "totalRuns": 5,
-      "totalDeliveries": 9,
-      "strikeRate": "55.56"
-    },
-    "RE van der Merwe": {
-      "totalRuns": 32,
-      "totalDeliveries": 21,
-      "strikeRate": "152.38"
-    },
-    "R Dravid": {
-      "totalRuns": 10,
-      "totalDeliveries": 13,
-      "strikeRate": "76.92"
-    },
-    "LRPL Taylor": {
-      "totalRuns": 28,
-      "totalDeliveries": 20,
-      "strikeRate": "140.00"
-    },
-    "V Kohli": {
-      "totalRuns": 7,
-      "totalDeliveries": 8,
-      "strikeRate": "87.50"
-    },
-    "RV Uthappa": {
-      "totalRuns": 21,
-      "totalDeliveries": 15,
-      "strikeRate": "140.00"
-    },
-    "MV Boucher": {
-      "totalRuns": 5,
-      "totalDeliveries": 6,
-      "strikeRate": "83.33"
-    },
-    "P Kumar": {
-      "totalRuns": 2,
-      "totalDeliveries": 3,
-      "strikeRate": "66.67"
-    },
-    "R Vinay Kumar": {
-      "totalRuns": 9,
-      "totalDeliveries": 8,
-      "strikeRate": "112.50"
-    },
-    "A Kumble": {
-      "totalRuns": 1,
-      "totalDeliveries": 1,
-      "strikeRate": "100.00"
-    }
+    "AC Gilchrist": "0.00",
+    "TL Suman": "91.67",
+    "HH Gibbs": "111.76",
+    "A Symonds": "157.14",
+    "RG Sharma": "108.33",
+    "Y Venugopal Rao": "0.00",
+    "AA Bilakhia": "87.50",
+    "RJ Harris": "180.00",
+    "JH Kallis": "100.00",
+    "MK Pandey": "55.56",
+    "RE van der Merwe": "152.38",
+    "R Dravid": "76.92",
+    "LRPL Taylor": "140.00",
+    "V Kohli": "87.50",
+    "RV Uthappa": "140.00",
+    "MV Boucher": "83.33",
+    "P Kumar": "66.67",
+    "R Vinay Kumar": "112.50",
+    "A Kumble": "100.00"
   },
   "2010": {
-    "M Vijay": {
-      "totalRuns": 27,
-      "totalDeliveries": 20,
-      "strikeRate": "135.00"
-    },
-    "ML Hayden": {
-      "totalRuns": 18,
-      "totalDeliveries": 31,
-      "strikeRate": "58.06"
-    },
-    "SK Raina": {
-      "totalRuns": 60,
-      "totalDeliveries": 37,
-      "strikeRate": "162.16"
-    },
-    "S Badrinath": {
-      "totalRuns": 15,
-      "totalDeliveries": 11,
-      "strikeRate": "136.36"
-    },
-    "MS Dhoni": {
-      "totalRuns": 22,
-      "totalDeliveries": 15,
-      "strikeRate": "146.67"
-    },
-    "JA Morkel": {
-      "totalRuns": 15,
-      "totalDeliveries": 6,
-      "strikeRate": "250.00"
-    },
-    "S Anirudha": {
-      "totalRuns": 11,
-      "totalDeliveries": 4,
-      "strikeRate": "275.00"
-    },
-    "S Dhawan": {
-      "totalRuns": 0,
-      "totalDeliveries": 8,
-      "strikeRate": "0.00"
-    },
-    "SR Tendulkar": {
-      "totalRuns": 53,
-      "totalDeliveries": 49,
-      "strikeRate": "108.16"
-    },
-    "AM Nayar": {
-      "totalRuns": 32,
-      "totalDeliveries": 26,
-      "strikeRate": "123.08"
-    },
-    "Harbhajan Singh": {
-      "totalRuns": 1,
-      "totalDeliveries": 2,
-      "strikeRate": "50.00"
-    },
-    "AT Rayudu": {
-      "totalRuns": 23,
-      "totalDeliveries": 15,
-      "strikeRate": "153.33"
-    },
-    "SS Tiwary": {
-      "totalRuns": 0,
-      "totalDeliveries": 2,
-      "strikeRate": "0.00"
-    },
-    "JP Duminy": {
-      "totalRuns": 6,
-      "totalDeliveries": 7,
-      "strikeRate": "85.71"
-    },
-    "KA Pollard": {
-      "totalRuns": 27,
-      "totalDeliveries": 10,
-      "strikeRate": "270.00"
-    },
-    "Z Khan": {
-      "totalRuns": 1,
-      "totalDeliveries": 3,
-      "strikeRate": "33.33"
-    },
-    "CRD Fernando": {
-      "totalRuns": 2,
-      "totalDeliveries": 2,
-      "strikeRate": "100.00"
-    },
-    "SL Malinga": {
-      "totalRuns": 1,
-      "totalDeliveries": 1,
-      "strikeRate": "100.00"
-    }
+    "M Vijay": "135.00",
+    "ML Hayden": "58.06",
+    "SK Raina": "162.16",
+    "S Badrinath": "136.36",
+    "MS Dhoni": "146.67",
+    "JA Morkel": "250.00",
+    "S Anirudha": "275.00",
+    "S Dhawan": "0.00",
+    "SR Tendulkar": "108.16",
+    "AM Nayar": "123.08",
+    "Harbhajan Singh": "50.00",
+    "AT Rayudu": "153.33",
+    "SS Tiwary": "0.00",
+    "JP Duminy": "85.71",
+    "KA Pollard": "270.00",
+    "Z Khan": "33.33",
+    "CRD Fernando": "100.00",
+    "SL Malinga": "100.00"
   },
   "2011": {
-    "MEK Hussey": {
-      "totalRuns": 69,
-      "totalDeliveries": 45,
-      "strikeRate": "153.33"
-    },
-    "M Vijay": {
-      "totalRuns": 97,
-      "totalDeliveries": 53,
-      "strikeRate": "183.02"
-    },
-    "MS Dhoni": {
-      "totalRuns": 22,
-      "totalDeliveries": 13,
-      "strikeRate": "169.23"
-    },
-    "SK Raina": {
-      "totalRuns": 9,
-      "totalDeliveries": 6,
-      "strikeRate": "150.00"
-    },
-    "JA Morkel": {
-      "totalRuns": 2,
-      "totalDeliveries": 4,
-      "strikeRate": "50.00"
-    },
-    "DJ Bravo": {
-      "totalRuns": 6,
-      "totalDeliveries": 1,
-      "strikeRate": "600.00"
-    },
-    "MA Agarwal": {
-      "totalRuns": 10,
-      "totalDeliveries": 5,
-      "strikeRate": "200.00"
-    },
-    "CH Gayle": {
-      "totalRuns": 0,
-      "totalDeliveries": 3,
-      "strikeRate": "0.00"
-    },
-    "V Kohli": {
-      "totalRuns": 36,
-      "totalDeliveries": 32,
-      "strikeRate": "112.50"
-    },
-    "AB de Villiers": {
-      "totalRuns": 18,
-      "totalDeliveries": 12,
-      "strikeRate": "150.00"
-    },
-    "LA Pomersbach": {
-      "totalRuns": 2,
-      "totalDeliveries": 3,
-      "strikeRate": "66.67"
-    },
-    "SS Tiwary": {
-      "totalRuns": 43,
-      "totalDeliveries": 34,
-      "strikeRate": "126.47"
-    },
-    "DL Vettori": {
-      "totalRuns": 0,
-      "totalDeliveries": 1,
-      "strikeRate": "0.00"
-    },
-    "A Mithun": {
-      "totalRuns": 14,
-      "totalDeliveries": 8,
-      "strikeRate": "175.00"
-    },
-    "Z Khan": {
-      "totalRuns": 21,
-      "totalDeliveries": 21,
-      "strikeRate": "100.00"
-    },
-    "J Syed Mohammad": {
-      "totalRuns": 3,
-      "totalDeliveries": 3,
-      "strikeRate": "100.00"
-    }
+    "MEK Hussey": "153.33",
+    "M Vijay": "183.02",
+    "MS Dhoni": "169.23",
+    "SK Raina": "150.00",
+    "JA Morkel": "50.00",
+    "DJ Bravo": "600.00",
+    "MA Agarwal": "200.00",
+    "CH Gayle": "0.00",
+    "V Kohli": "112.50",
+    "AB de Villiers": "150.00",
+    "LA Pomersbach": "66.67",
+    "SS Tiwary": "126.47",
+    "DL Vettori": "0.00",
+    "A Mithun": "175.00",
+    "Z Khan": "100.00",
+    "J Syed Mohammad": "100.00"
   },
   "2012": {
-    "MEK Hussey": {
-      "totalRuns": 56,
-      "totalDeliveries": 44,
-      "strikeRate": "127.27"
-    },
-    "M Vijay": {
-      "totalRuns": 44,
-      "totalDeliveries": 32,
-      "strikeRate": "137.50"
-    },
-    "SK Raina": {
-      "totalRuns": 75,
-      "totalDeliveries": 38,
-      "strikeRate": "197.37"
-    },
-    "MS Dhoni": {
-      "totalRuns": 15,
-      "totalDeliveries": 10,
-      "strikeRate": "150.00"
-    },
-    "MS Bisla": {
-      "totalRuns": 93,
-      "totalDeliveries": 52,
-      "strikeRate": "178.85"
-    },
-    "G Gambhir": {
-      "totalRuns": 2,
-      "totalDeliveries": 4,
-      "strikeRate": "50.00"
-    },
-    "JH Kallis": {
-      "totalRuns": 72,
-      "totalDeliveries": 50,
-      "strikeRate": "144.00"
-    },
-    "LR Shukla": {
-      "totalRuns": 3,
-      "totalDeliveries": 6,
-      "strikeRate": "50.00"
-    },
-    "YK Pathan": {
-      "totalRuns": 1,
-      "totalDeliveries": 2,
-      "strikeRate": "50.00"
-    },
-    "Shakib Al Hasan": {
-      "totalRuns": 12,
-      "totalDeliveries": 7,
-      "strikeRate": "171.43"
-    },
-    "MK Tiwary": {
-      "totalRuns": 9,
-      "totalDeliveries": 3,
-      "strikeRate": "300.00"
-    }
+    "MEK Hussey": "127.27",
+    "M Vijay": "137.50",
+    "SK Raina": "197.37",
+    "MS Dhoni": "150.00",
+    "MS Bisla": "178.85",
+    "G Gambhir": "50.00",
+    "JH Kallis": "144.00",
+    "LR Shukla": "50.00",
+    "YK Pathan": "50.00",
+    "Shakib Al Hasan": "171.43",
+    "MK Tiwary": "300.00"
   },
   "2013": {
-    "DR Smith": {
-      "totalRuns": 4,
-      "totalDeliveries": 4,
-      "strikeRate": "100.00"
-    },
-    "KD Karthik": {
-      "totalRuns": 24,
-      "totalDeliveries": 27,
-      "strikeRate": "88.89"
-    },
-    "AP Tare": {
-      "totalRuns": 0,
-      "totalDeliveries": 1,
-      "strikeRate": "0.00"
-    },
-    "RG Sharma": {
-      "totalRuns": 2,
-      "totalDeliveries": 5,
-      "strikeRate": "40.00"
-    },
-    "AT Rayudu": {
-      "totalRuns": 38,
-      "totalDeliveries": 37,
-      "strikeRate": "102.70"
-    },
-    "KA Pollard": {
-      "totalRuns": 60,
-      "totalDeliveries": 32,
-      "strikeRate": "187.50"
-    },
-    "Harbhajan Singh": {
-      "totalRuns": 15,
-      "totalDeliveries": 9,
-      "strikeRate": "166.67"
-    },
-    "R Dhawan": {
-      "totalRuns": 3,
-      "totalDeliveries": 3,
-      "strikeRate": "100.00"
-    },
-    "MG Johnson": {
-      "totalRuns": 1,
-      "totalDeliveries": 2,
-      "strikeRate": "50.00"
-    },
-    "SL Malinga": {
-      "totalRuns": 0,
-      "totalDeliveries": 2,
-      "strikeRate": "0.00"
-    },
-    "PP Ojha": {
-      "totalRuns": 1,
-      "totalDeliveries": 1,
-      "strikeRate": "100.00"
-    },
-    "MEK Hussey": {
-      "totalRuns": 1,
-      "totalDeliveries": 2,
-      "strikeRate": "50.00"
-    },
-    "M Vijay": {
-      "totalRuns": 18,
-      "totalDeliveries": 20,
-      "strikeRate": "90.00"
-    },
-    "SK Raina": {
-      "totalRuns": 0,
-      "totalDeliveries": 1,
-      "strikeRate": "0.00"
-    },
-    "S Badrinath": {
-      "totalRuns": 0,
-      "totalDeliveries": 3,
-      "strikeRate": "0.00"
-    },
-    "DJ Bravo": {
-      "totalRuns": 19,
-      "totalDeliveries": 18,
-      "strikeRate": "105.56"
-    },
-    "RA Jadeja": {
-      "totalRuns": 0,
-      "totalDeliveries": 2,
-      "strikeRate": "0.00"
-    },
-    "MS Dhoni": {
-      "totalRuns": 67,
-      "totalDeliveries": 49,
-      "strikeRate": "136.73"
-    },
-    "JA Morkel": {
-      "totalRuns": 10,
-      "totalDeliveries": 10,
-      "strikeRate": "100.00"
-    },
-    "CH Morris": {
-      "totalRuns": 0,
-      "totalDeliveries": 1,
-      "strikeRate": "0.00"
-    },
-    "R Ashwin": {
-      "totalRuns": 10,
-      "totalDeliveries": 19,
-      "strikeRate": "52.63"
-    },
-    "MM Sharma": {
-      "totalRuns": 0,
-      "totalDeliveries": 2,
-      "strikeRate": "0.00"
-    }
+    "DR Smith": "100.00",
+    "KD Karthik": "88.89",
+    "AP Tare": "0.00",
+    "RG Sharma": "40.00",
+    "AT Rayudu": "102.70",
+    "KA Pollard": "187.50",
+    "Harbhajan Singh": "166.67",
+    "R Dhawan": "100.00",
+    "MG Johnson": "50.00",
+    "SL Malinga": "0.00",
+    "PP Ojha": "100.00",
+    "MEK Hussey": "50.00",
+    "M Vijay": "90.00",
+    "SK Raina": "0.00",
+    "S Badrinath": "0.00",
+    "DJ Bravo": "105.56",
+    "RA Jadeja": "0.00",
+    "MS Dhoni": "136.73",
+    "JA Morkel": "100.00",
+    "CH Morris": "0.00",
+    "R Ashwin": "52.63",
+    "MM Sharma": "0.00"
   },
   "2014": {
-    "V Sehwag": {
-      "totalRuns": 8,
-      "totalDeliveries": 10,
-      "strikeRate": "80.00"
-    },
-    "M Vohra": {
-      "totalRuns": 69,
-      "totalDeliveries": 52,
-      "strikeRate": "132.69"
-    },
-    "GJ Bailey": {
-      "totalRuns": 1,
-      "totalDeliveries": 2,
-      "strikeRate": "50.00"
-    },
-    "WP Saha": {
-      "totalRuns": 120,
-      "totalDeliveries": 56,
-      "strikeRate": "214.29"
-    },
-    "GJ Maxwell": {
-      "totalRuns": 0,
-      "totalDeliveries": 1,
-      "strikeRate": "0.00"
-    },
-    "DA Miller": {
-      "totalRuns": 1,
-      "totalDeliveries": 1,
-      "strikeRate": "100.00"
-    },
-    "RV Uthappa": {
-      "totalRuns": 5,
-      "totalDeliveries": 3,
-      "strikeRate": "166.67"
-    },
-    "G Gambhir": {
-      "totalRuns": 25,
-      "totalDeliveries": 19,
-      "strikeRate": "131.58"
-    },
-    "MK Pandey": {
-      "totalRuns": 96,
-      "totalDeliveries": 52,
-      "strikeRate": "184.62"
-    },
-    "YK Pathan": {
-      "totalRuns": 37,
-      "totalDeliveries": 23,
-      "strikeRate": "160.87"
-    },
-    "Shakib Al Hasan": {
-      "totalRuns": 12,
-      "totalDeliveries": 7,
-      "strikeRate": "171.43"
-    },
-    "RN ten Doeschate": {
-      "totalRuns": 4,
-      "totalDeliveries": 3,
-      "strikeRate": "133.33"
-    },
-    "SA Yadav": {
-      "totalRuns": 5,
-      "totalDeliveries": 6,
-      "strikeRate": "83.33"
-    },
-    "PP Chawla": {
-      "totalRuns": 14,
-      "totalDeliveries": 6,
-      "strikeRate": "233.33"
-    },
-    "SP Narine": {
-      "totalRuns": 2,
-      "totalDeliveries": 4,
-      "strikeRate": "50.00"
-    }
+    "V Sehwag": "80.00",
+    "M Vohra": "132.69",
+    "GJ Bailey": "50.00",
+    "WP Saha": "214.29",
+    "GJ Maxwell": "0.00",
+    "DA Miller": "100.00",
+    "RV Uthappa": "166.67",
+    "G Gambhir": "131.58",
+    "MK Pandey": "184.62",
+    "YK Pathan": "160.87",
+    "Shakib Al Hasan": "171.43",
+    "RN ten Doeschate": "133.33",
+    "SA Yadav": "83.33",
+    "PP Chawla": "233.33",
+    "SP Narine": "50.00"
   },
   "2015": {
-    "LMP Simmons": {
-      "totalRuns": 70,
-      "totalDeliveries": 45,
-      "strikeRate": "155.56"
-    },
-    "PA Patel": {
-      "totalRuns": 0,
-      "totalDeliveries": 3,
-      "strikeRate": "0.00"
-    },
-    "RG Sharma": {
-      "totalRuns": 50,
-      "totalDeliveries": 26,
-      "strikeRate": "192.31"
-    },
-    "AT Rayudu": {
-      "totalRuns": 36,
-      "totalDeliveries": 24,
-      "strikeRate": "150.00"
-    },
-    "KA Pollard": {
-      "totalRuns": 36,
-      "totalDeliveries": 18,
-      "strikeRate": "200.00"
-    },
-    "HH Pandya": {
-      "totalRuns": 0,
-      "totalDeliveries": 2,
-      "strikeRate": "0.00"
-    },
-    "Harbhajan Singh": {
-      "totalRuns": 10,
-      "totalDeliveries": 3,
-      "strikeRate": "333.33"
-    },
-    "DR Smith": {
-      "totalRuns": 58,
-      "totalDeliveries": 48,
-      "strikeRate": "120.83"
-    },
-    "MEK Hussey": {
-      "totalRuns": 6,
-      "totalDeliveries": 10,
-      "strikeRate": "60.00"
-    },
-    "SK Raina": {
-      "totalRuns": 30,
-      "totalDeliveries": 20,
-      "strikeRate": "150.00"
-    },
-    "MS Dhoni": {
-      "totalRuns": 18,
-      "totalDeliveries": 13,
-      "strikeRate": "138.46"
-    },
-    "DJ Bravo": {
-      "totalRuns": 9,
-      "totalDeliveries": 6,
-      "strikeRate": "150.00"
-    },
-    "P Negi": {
-      "totalRuns": 5,
-      "totalDeliveries": 6,
-      "strikeRate": "83.33"
-    },
-    "F du Plessis": {
-      "totalRuns": 1,
-      "totalDeliveries": 3,
-      "strikeRate": "33.33"
-    },
-    "RA Jadeja": {
-      "totalRuns": 11,
-      "totalDeliveries": 8,
-      "strikeRate": "137.50"
-    },
-    "R Ashwin": {
-      "totalRuns": 2,
-      "totalDeliveries": 4,
-      "strikeRate": "50.00"
-    },
-    "MM Sharma": {
-      "totalRuns": 21,
-      "totalDeliveries": 7,
-      "strikeRate": "300.00"
-    }
+    "LMP Simmons": "155.56",
+    "PA Patel": "0.00",
+    "RG Sharma": "192.31",
+    "AT Rayudu": "150.00",
+    "KA Pollard": "200.00",
+    "HH Pandya": "0.00",
+    "Harbhajan Singh": "333.33",
+    "DR Smith": "120.83",
+    "MEK Hussey": "60.00",
+    "SK Raina": "150.00",
+    "MS Dhoni": "138.46",
+    "DJ Bravo": "150.00",
+    "P Negi": "83.33",
+    "F du Plessis": "33.33",
+    "RA Jadeja": "137.50",
+    "R Ashwin": "50.00",
+    "MM Sharma": "300.00"
   },
   "2016": {
-    "DA Warner": {
-      "totalRuns": 73,
-      "totalDeliveries": 39,
-      "strikeRate": "187.18"
-    },
-    "S Dhawan": {
-      "totalRuns": 29,
-      "totalDeliveries": 26,
-      "strikeRate": "111.54"
-    },
-    "MC Henriques": {
-      "totalRuns": 4,
-      "totalDeliveries": 5,
-      "strikeRate": "80.00"
-    },
-    "Yuvraj Singh": {
-      "totalRuns": 39,
-      "totalDeliveries": 24,
-      "strikeRate": "162.50"
-    },
-    "DJ Hooda": {
-      "totalRuns": 3,
-      "totalDeliveries": 6,
-      "strikeRate": "50.00"
-    },
-    "NV Ojha": {
-      "totalRuns": 7,
-      "totalDeliveries": 4,
-      "strikeRate": "175.00"
-    },
-    "BCJ Cutting": {
-      "totalRuns": 47,
-      "totalDeliveries": 18,
-      "strikeRate": "261.11"
-    },
-    "Bipul Sharma": {
-      "totalRuns": 5,
-      "totalDeliveries": 3,
-      "strikeRate": "166.67"
-    },
-    "B Kumar": {
-      "totalRuns": 1,
-      "totalDeliveries": 1,
-      "strikeRate": "100.00"
-    },
-    "CH Gayle": {
-      "totalRuns": 81,
-      "totalDeliveries": 41,
-      "strikeRate": "197.56"
-    },
-    "V Kohli": {
-      "totalRuns": 55,
-      "totalDeliveries": 36,
-      "strikeRate": "152.78"
-    },
-    "AB de Villiers": {
-      "totalRuns": 5,
-      "totalDeliveries": 6,
-      "strikeRate": "83.33"
-    },
-    "KL Rahul": {
-      "totalRuns": 11,
-      "totalDeliveries": 9,
-      "strikeRate": "122.22"
-    },
-    "SR Watson": {
-      "totalRuns": 11,
-      "totalDeliveries": 9,
-      "strikeRate": "122.22"
-    },
-    "Sachin Baby": {
-      "totalRuns": 18,
-      "totalDeliveries": 10,
-      "strikeRate": "180.00"
-    },
-    "STR Binny": {
-      "totalRuns": 10,
-      "totalDeliveries": 7,
-      "strikeRate": "142.86"
-    },
-    "CJ Jordan": {
-      "totalRuns": 4,
-      "totalDeliveries": 4,
-      "strikeRate": "100.00"
-    },
-    "Iqbal Abdulla": {
-      "totalRuns": 5,
-      "totalDeliveries": 2,
-      "strikeRate": "250.00"
-    }
+    "DA Warner": "187.18",
+    "S Dhawan": "111.54",
+    "MC Henriques": "80.00",
+    "Yuvraj Singh": "162.50",
+    "DJ Hooda": "50.00",
+    "NV Ojha": "175.00",
+    "BCJ Cutting": "261.11",
+    "Bipul Sharma": "166.67",
+    "B Kumar": "100.00",
+    "CH Gayle": "197.56",
+    "V Kohli": "152.78",
+    "AB de Villiers": "83.33",
+    "KL Rahul": "122.22",
+    "SR Watson": "122.22",
+    "Sachin Baby": "180.00",
+    "STR Binny": "142.86",
+    "CJ Jordan": "100.00",
+    "Iqbal Abdulla": "250.00"
   },
   "2017": {
-    "LMP Simmons": {
-      "totalRuns": 3,
-      "totalDeliveries": 8,
-      "strikeRate": "37.50"
-    },
-    "PA Patel": {
-      "totalRuns": 4,
-      "totalDeliveries": 6,
-      "strikeRate": "66.67"
-    },
-    "AT Rayudu": {
-      "totalRuns": 13,
-      "totalDeliveries": 16,
-      "strikeRate": "81.25"
-    },
-    "RG Sharma": {
-      "totalRuns": 25,
-      "totalDeliveries": 23,
-      "strikeRate": "108.70"
-    },
-    "KH Pandya": {
-      "totalRuns": 52,
-      "totalDeliveries": 41,
-      "strikeRate": "126.83"
-    },
-    "KA Pollard": {
-      "totalRuns": 7,
-      "totalDeliveries": 3,
-      "strikeRate": "233.33"
-    },
-    "HH Pandya": {
-      "totalRuns": 10,
-      "totalDeliveries": 9,
-      "strikeRate": "111.11"
-    },
-    "KV Sharma": {
-      "totalRuns": 1,
-      "totalDeliveries": 5,
-      "strikeRate": "20.00"
-    },
-    "MG Johnson": {
-      "totalRuns": 14,
-      "totalDeliveries": 14,
-      "strikeRate": "100.00"
-    },
-    "AM Rahane": {
-      "totalRuns": 44,
-      "totalDeliveries": 38,
-      "strikeRate": "115.79"
-    },
-    "RA Tripathi": {
-      "totalRuns": 7,
-      "totalDeliveries": 8,
-      "strikeRate": "87.50"
-    },
-    "SPD Smith": {
-      "totalRuns": 54,
-      "totalDeliveries": 53,
-      "strikeRate": "101.89"
-    },
-    "MS Dhoni": {
-      "totalRuns": 10,
-      "totalDeliveries": 13,
-      "strikeRate": "76.92"
-    },
-    "MK Tiwary": {
-      "totalRuns": 8,
-      "totalDeliveries": 8,
-      "strikeRate": "100.00"
-    },
-    "Washington Sundar": {
-      "totalRuns": 1,
-      "totalDeliveries": 1,
-      "strikeRate": "100.00"
-    },
-    "DT Christian": {
-      "totalRuns": 4,
-      "totalDeliveries": 2,
-      "strikeRate": "200.00"
-    }
+    "LMP Simmons": "37.50",
+    "PA Patel": "66.67",
+    "AT Rayudu": "81.25",
+    "RG Sharma": "108.70",
+    "KH Pandya": "126.83",
+    "KA Pollard": "233.33",
+    "HH Pandya": "111.11",
+    "KV Sharma": "20.00",
+    "MG Johnson": "100.00",
+    "AM Rahane": "115.79",
+    "RA Tripathi": "87.50",
+    "SPD Smith": "101.89",
+    "MS Dhoni": "76.92",
+    "MK Tiwary": "100.00",
+    "Washington Sundar": "100.00",
+    "DT Christian": "200.00"
   }
 }

@@ -28,14 +28,14 @@ function calTotalRunAndDeliveries(deliveries, id) {
 }
 
 function calBatmanStrikeRates(totalRunAndDeliveries){
-    let BatmanStrikeRates = {};
+    let batsmanStrikeRates = {};
     for(let key in totalRunAndDeliveries){
         const totalRuns = Number(totalRunAndDeliveries[key]['totalRuns']);
         const totalDeliveries = Number(totalRunAndDeliveries[key]['totalDeliveries']);
         const strikeRate = ((totalRuns / totalDeliveries)*100).toFixed(2);
-        totalRunAndDeliveries[key]['strikeRate'] = strikeRate;
+        batsmanStrikeRates[key] = strikeRate;
     }
-    return totalRunAndDeliveries; 
+    return batsmanStrikeRates; 
 }
 
 function calculateStrikeRatePerSeason(deliveries, matches) {

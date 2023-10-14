@@ -1,4 +1,4 @@
-function getSeasonTopPlayerOfTheMatch(matches) {
+function getTopPlayerOfTheMatch(matches) {
     let seasonPlayerOfTheMatch = {};
     matches.forEach((match) => {
         if (seasonPlayerOfTheMatch[match.season]) {
@@ -24,17 +24,11 @@ function getSeasonTopPlayerOfTheMatch(matches) {
 
         for (let key in seasonPlayerOfTheMatch[playerOfTheMatch]) {
             if (Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]) == max) {
-                if (seasonTopPlayerOfTheMatch[playerOfTheMatch]) {
-                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = { name: key };
-                }
-                else {
-                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = {};
-                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = { name: key };
-                }
+                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = key;
             }
         }
     }
     return seasonTopPlayerOfTheMatch;
 }
 
-module.exports = getSeasonTopPlayerOfTheMatch;
+module.exports = getTopPlayerOfTheMatch;
