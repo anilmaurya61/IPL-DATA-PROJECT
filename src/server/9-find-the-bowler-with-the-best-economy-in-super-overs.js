@@ -1,8 +1,8 @@
-function calculateTotalRunAndDeliveries(deliveries){
+function calculateTotalRunAndDeliveries(deliveries) {
     let totalRunAndDeliveries = [];
-    deliveries.forEach((deliver) =>{
-        if(deliveries[deliver.is_super_over] != 0){
-            
+    deliveries.forEach((deliver) => {
+        if (deliveries[deliver.is_super_over] != 0) {
+
             if (totalRunAndDeliveries[deliver.bowler]) {
                 totalRunAndDeliveries[deliver.bowler]['totalRuns'] = totalRunAndDeliveries[deliver.bowler]['totalRuns'] + Number(deliver.total_runs);
             }
@@ -22,20 +22,21 @@ function calculateTotalRunAndDeliveries(deliveries){
     return totalRunAndDeliveries;
 }
 
-function calculateEconomySuperOverBowler(totalRunAndDeliveries){
+function calculateEconomySuperOverBowler(totalRunAndDeliveries) {
     let economicalBowlerList = [];
 
     for (let key in totalRunAndDeliveries) {
         const totalRuns = Number(totalRunAndDeliveries[key]['totalRuns']);
         const totalDeliveries = Number(totalRunAndDeliveries[key]['totalFairDeliveries']);
+        if (totalDeliveries > 6) {
+            const runsPerOver = totalRuns / (totalDeliveries / 6);
+            const economyRate = Number(runsPerOver.toFixed(2));
 
-        const runsPerOver = totalRuns / (totalDeliveries / 6);
-        const economyRate = Number(runsPerOver.toFixed(2));
-
-        economicalBowlerList.push({
-            name: key,
-            economyRate: economyRate,
-        });
+            economicalBowlerList.push({
+                name: key,
+                economyRate: economyRate,
+            });
+        }
     };
     return economicalBowlerList.sort((a, b) => {
         const A = a.economyRate;
@@ -49,12 +50,12 @@ function calculateEconomySuperOverBowler(totalRunAndDeliveries){
     })
 }
 
-function findBestEconomySuperOverBowler(deliveries){
+function findBestEconomySuperOverBowler(deliveries) {
     const totalRunAndDeliveries = calculateTotalRunAndDeliveries(deliveries);
-    
+
     const economySuperOverBowler = calculateEconomySuperOverBowler(totalRunAndDeliveries);
 
-    return economySuperOverBowler.slice(0,1);
+    return economySuperOverBowler.slice(0, 1);
 }
 
 module.exports = findBestEconomySuperOverBowler;
