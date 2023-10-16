@@ -1,4 +1,4 @@
-# IPL Data Project Readme
+# IPL Data Project
 
 ## Overview
 
