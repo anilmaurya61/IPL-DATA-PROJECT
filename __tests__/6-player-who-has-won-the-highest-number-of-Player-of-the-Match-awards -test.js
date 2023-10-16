@@ -78,11 +78,12 @@ test("player who won the highest number of match awards", () => {
         },
     ];
     const resultData = {
-        "2008": "Yuvraj Singh",
-        "2009": "Rashid Khan",
-        "2010": "GJ Maxwell",
-        "2011": "GJ Maxwell",
-        "2013": "SPD Smith",
-    };
+        "2008": ["Yuvraj Singh"],
+        "2009": ["Rashid Khan"],
+        "2010": ["SPD Smith", "Rashid Khan", "GJ Maxwell"],
+        "2011": ["Rashid Khan", "GJ Maxwell"],
+        "2013": ["SPD Smith"]
+    }
+    
     expect(getTopPlayerOfTheMatch(sampleData)).toEqual(resultData);
 });

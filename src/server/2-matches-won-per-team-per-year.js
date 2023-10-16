@@ -1,7 +1,7 @@
 function numOfMatchesWonPerTeamPerYear(matches) {
-    const matchesWonPerTeamPerYear = {};
 
-    matches.forEach((match) => {
+    return matches.reduce ((matchesWonPerTeamPerYear,match) => {
+
         if (matchesWonPerTeamPerYear.hasOwnProperty(match.season) && matchesWonPerTeamPerYear[match.season][match.winner]) {
             matchesWonPerTeamPerYear[match.season][match.winner]++;
         }
@@ -11,8 +11,9 @@ function numOfMatchesWonPerTeamPerYear(matches) {
             matchesWonPerTeamPerYear[match.season] = {};
             matchesWonPerTeamPerYear[match.season][match.winner] = 1;
         }
-    })
-    return matchesWonPerTeamPerYear;
+        return matchesWonPerTeamPerYear;
+    },{});
+    
 }
 
 module.exports = numOfMatchesWonPerTeamPerYear;

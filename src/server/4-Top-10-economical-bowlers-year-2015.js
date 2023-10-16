@@ -1,21 +1,24 @@
-function getEconomicalBowler(deliveries, matchId) {
-    let bowler = [];
-    matchId.forEach((id) => {
-        deliveries.forEach((entry) => {
-            if (entry.match_id == id) {
+const getMatchIdByYear = require('../utils/Helpers')
 
-                if (bowler[entry.bowler]) {
-                    bowler[entry.bowler]['totalRuns'] = bowler[entry.bowler]['totalRuns'] + Number(entry.total_runs);
+function top10MostEconomicalBowlers(deliveries, matches) {
+    const matchId = getMatchIdByYear(matches,2015)
+    let runsConcededAndBallsBowledByBowler = {};
+    matchId.forEach((id) => {
+        deliveries.forEach((delivery) => {
+            if (delivery.match_id == id) {
+
+                if (runsConcededAndBallsBowledByBowler[delivery.bowler]) {
+                    runsConcededAndBallsBowledByBowler[delivery.bowler]['totalRuns'] = runsConcededAndBallsBowledByBowler[delivery.bowler]['totalRuns'] + Number(delivery.total_runs);
                 }
                 else {
-                    bowler[entry.bowler] = {};
-                    bowler[entry.bowler]['totalRuns'] = Number(entry.total_runs);
+                    runsConcededAndBallsBowledByBowler[delivery.bowler] = {};
+                    runsConcededAndBallsBowledByBowler[delivery.bowler]['totalRuns'] = Number(delivery.total_runs);
 
-                    bowler[entry.bowler]['totalFairDeliveries'] = 0
+                    runsConcededAndBallsBowledByBowler[delivery.bowler]['totalFairDeliveries'] = 0
                 }
 
-                if (!(Number(entry.wide_runs) || Number(entry.noball_runs))) {
-                    bowler[entry.bowler]['totalFairDeliveries']++;
+                if (!(Number(delivery.wide_runs) || Number(delivery.noball_runs))) {
+                    runsConcededAndBallsBowledByBowler[delivery.bowler]['totalFairDeliveries']++;
                 }
             }
         })
@@ -23,15 +26,15 @@ function getEconomicalBowler(deliveries, matchId) {
 
     let economicalBowlerList = [];
 
-    for (let key in bowler) {
-        const totalRuns = Number(bowler[key]['totalRuns']);
-        const totalDeliveries = Number(bowler[key]['totalFairDeliveries']);
+    for (let bowler in runsConcededAndBallsBowledByBowler) {
+        const totalRuns = Number(runsConcededAndBallsBowledByBowler[bowler]['totalRuns']);
+        const totalDeliveries = Number(runsConcededAndBallsBowledByBowler[bowler]['totalFairDeliveries']);
 
         const runsPerOver = totalRuns / (totalDeliveries / 6);
         const economyRate = Number(runsPerOver.toFixed(2));
 
         economicalBowlerList.push({
-            name: key,
+            name: bowler,
             economyRate: economyRate,
         });
     };
@@ -49,4 +52,4 @@ function getEconomicalBowler(deliveries, matchId) {
     return economicalBowlerList.slice(0, 10);
 }
 
-module.exports = getEconomicalBowler;
+module.exports = top10MostEconomicalBowlers;

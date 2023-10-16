@@ -1,5 +1,5 @@
-const calExtraRunConceded = require('../src/server/3-extra-run-conceded-per-team-2016')
-const getMatchIdByYear = require('../src/utils/Helpers.js')
+const top10MostEconomicalBowlers = require('../src/server/4-Top-10-economical-bowlers-year-2015')
+
 
 test("economical bowlers year 2015", () => {
 
@@ -79,11 +79,6 @@ test("economical bowlers year 2015", () => {
         },
     ];
 
-    const resultData = {
-        "Mumbai Indians": 0,
-        "Rajasthan Royals": 3,
-      };
-    const matchId = getMatchIdByYear(sampleDataMatches,2015);
-    console.log(matchId);
-    expect(calExtraRunConceded(sampleDataDeliveries, matchId)).toEqual(resultData);
+    const resultData =[{"economyRate": 12, "name": "A Choudhary"}]
+    expect(top10MostEconomicalBowlers(sampleDataDeliveries, sampleDataMatches)).toEqual(resultData);
 });

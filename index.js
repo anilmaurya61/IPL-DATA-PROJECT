@@ -1,7 +1,7 @@
 const getMatchesPerYear = require('./src/server/1-matches-per-year.js')
 const numOfMatchesWonPerTeamPerYear = require('./src/server/2-matches-won-per-team-per-year.js')
 const calExtraRunConceded = require('./src/server/3-extra-run-conceded-per-team-2016.js')
-const getEconomicalBowler = require('./src/server/4-Top-10-economical-bowlers-year-2015.js')
+const top10MostEconomicalBowlers = require('./src/server/4-Top-10-economical-bowlers-year-2015.js')
 const getNumberOfTimesTeamWonTheTossAndMatch = require('./src/server/5-number-of-times-team-won-the-toss-and-match.js')
 const getTopPlayerOfTheMatch = require('./src/server/6-player-who-has-won-the-highest-number-of-Player-of-the-Match-awards .js')
 const calculateStrikeRatePerSeason = require('./src/server/7-find-the-strike-rate-of-a-batsman-for-each-season.js')
@@ -46,13 +46,13 @@ fs.createReadStream('./src/data/matches.csv')
             .on('end', () => {
 
                 // 3-extra-run-conceded-per-team-2016
-                let matchId = getMatchIdByYear(matches,2016);
-                const extraRunConceded = calExtraRunConceded(deliveries, matchId);
+                // let matchId = getMatchIdByYear(matches,2016);
+                const extraRunConceded = calExtraRunConceded(deliveries, matches);
                 fs.writeFileSync(filePath + '/extra-run-conceded-per-team-2016.json', JSON.stringify(extraRunConceded, null, 2));
 
                 // 4-Top-10-economical-bowlers-year-2015
-                matchId = getMatchIdByYear(matches,2015);
-                const economicalBowler= getEconomicalBowler(deliveries, matchId);
+                // matchId = getMatchIdByYear(matches,2015);
+                const economicalBowler= top10MostEconomicalBowlers(deliveries, matches);
                 fs.writeFileSync(filePath + '/top-10-economical-bowlers-year-2015.json', JSON.stringify(economicalBowler, null, 2));
                 
                 // 7-find-the-strike-rate-of-a-batsman-for-each-season

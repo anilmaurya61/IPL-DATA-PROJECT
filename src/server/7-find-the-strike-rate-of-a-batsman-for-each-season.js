@@ -11,11 +11,11 @@ function getMatchIdOfSeasons(matches){
     return matchId;
 }
 
-function calTotalRunAndDeliveries(deliveries, id) {
+function calcTotalRunAndDeliveries(deliveries, matchId) {
     let totalRunAndDeliveries = {};
 
     deliveries.forEach((deliver) => {
-        if (deliver.match_id == id) {
+        if (deliver.match_id == matchId) {
             if (totalRunAndDeliveries[deliver.batsman]) {
                 totalRunAndDeliveries[deliver.batsman]['totalRuns'] += Number(deliver.total_runs);
                 totalRunAndDeliveries[deliver.batsman]['totalDeliveries'] += 1;
@@ -29,11 +29,11 @@ function calTotalRunAndDeliveries(deliveries, id) {
 
 function calBatmanStrikeRates(totalRunAndDeliveries){
     let batsmanStrikeRates = {};
-    for(let key in totalRunAndDeliveries){
-        const totalRuns = Number(totalRunAndDeliveries[key]['totalRuns']);
-        const totalDeliveries = Number(totalRunAndDeliveries[key]['totalDeliveries']);
+    for(let batsman in totalRunAndDeliveries){
+        const totalRuns = Number(totalRunAndDeliveries[batsman]['totalRuns']);
+        const totalDeliveries = Number(totalRunAndDeliveries[batsman]['totalDeliveries']);
         const strikeRate = ((totalRuns / totalDeliveries)*100).toFixed(2);
-        batsmanStrikeRates[key] = strikeRate;
+        batsmanStrikeRates[batsman] = strikeRate;
     }
     return batsmanStrikeRates; 
 }
@@ -44,7 +44,7 @@ function calculateStrikeRatePerSeason(deliveries, matches) {
     for(let season in matchId){
         let batsmanStrikeRates = {};
         for(let id in matchId[season]){
-            const totalRunAndDeliveries = calTotalRunAndDeliveries(deliveries, matchId[season][id]);
+            const totalRunAndDeliveries = calcTotalRunAndDeliveries(deliveries, matchId[season][id]);
             batsmanStrikeRates = calBatmanStrikeRates(totalRunAndDeliveries);
         }
         batsmanStrikeRatesPerSeason[season] = batsmanStrikeRates;

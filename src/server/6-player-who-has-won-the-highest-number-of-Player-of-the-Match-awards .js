@@ -14,17 +14,20 @@ function getTopPlayerOfTheMatch(matches) {
     });
 
     let seasonTopPlayerOfTheMatch = {};
-    for (let playerOfTheMatch in seasonPlayerOfTheMatch) {
+    for (let season in seasonPlayerOfTheMatch) {
         let max = 0;
-        for (let key in seasonPlayerOfTheMatch[playerOfTheMatch]) {
-            if (Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]) > Number(max)) {
-                max = Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]);
+        for (let playerOfTheMatch in seasonPlayerOfTheMatch[season]) {
+            if (Number(seasonPlayerOfTheMatch[season][playerOfTheMatch]) > Number(max)) {
+                max = Number(seasonPlayerOfTheMatch[season][playerOfTheMatch]);
             }
         }
 
-        for (let key in seasonPlayerOfTheMatch[playerOfTheMatch]) {
-            if (Number(seasonPlayerOfTheMatch[playerOfTheMatch][key]) == max) {
-                    seasonTopPlayerOfTheMatch[playerOfTheMatch] = key;
+        for (let playerOfTheMatch in seasonPlayerOfTheMatch[season]) {
+            if (Number(seasonPlayerOfTheMatch[season][playerOfTheMatch]) == max) {
+                if (!seasonTopPlayerOfTheMatch[season]) {
+                    seasonTopPlayerOfTheMatch[season] = []; 
+                }
+                seasonTopPlayerOfTheMatch[season].push(playerOfTheMatch); 
             }
         }
     }

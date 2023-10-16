@@ -1,13 +1,16 @@
-function calExtraRunConceded(deliveries, matchId){
+const getMatchIdByYear = require('../utils/Helpers')
+
+function calExtraRunConceded(deliveries, matches){
+    const matchId = getMatchIdByYear(matches,2016);
     const extraRunConceded = {};
     matchId.forEach((id) =>{
-        deliveries.forEach((entry) =>{
-            if(entry.match_id == id){
-                if(extraRunConceded[entry.bowling_team]){
-                    extraRunConceded[entry.bowling_team] = extraRunConceded[entry.bowling_team] + Number(entry.extra_runs);
+        deliveries.forEach((delivery) =>{
+            if(delivery.match_id == id){
+                if(extraRunConceded[delivery.bowling_team]){
+                    extraRunConceded[delivery.bowling_team] = extraRunConceded[delivery.bowling_team] + Number(delivery.extra_runs);
                 }
                 else{
-                    extraRunConceded[entry.bowling_team] = Number(entry.extra_runs);
+                    extraRunConceded[delivery.bowling_team] = Number(delivery.extra_runs);
                 }
             }
         })

@@ -25,15 +25,15 @@ function calculateTotalRunAndDeliveries(deliveries) {
 function calculateEconomySuperOverBowler(totalRunAndDeliveries) {
     let economicalBowlerList = [];
 
-    for (let key in totalRunAndDeliveries) {
-        const totalRuns = Number(totalRunAndDeliveries[key]['totalRuns']);
-        const totalDeliveries = Number(totalRunAndDeliveries[key]['totalFairDeliveries']);
+    for (let bowler in totalRunAndDeliveries) {
+        const totalRuns = Number(totalRunAndDeliveries[bowler]['totalRuns']);
+        const totalDeliveries = Number(totalRunAndDeliveries[bowler]['totalFairDeliveries']);
         if (totalDeliveries > 6) {
             const runsPerOver = totalRuns / (totalDeliveries / 6);
             const economyRate = Number(runsPerOver.toFixed(2));
 
             economicalBowlerList.push({
-                name: key,
+                name: bowler,
                 economyRate: economyRate,
             });
         }

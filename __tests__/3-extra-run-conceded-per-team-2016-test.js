@@ -1,5 +1,4 @@
 const calExtraRunConceded = require('../src/server/3-extra-run-conceded-per-team-2016')
-const getMatchIdByYear = require('../src/utils/Helpers.js')
 
 test("extra run conceded per team", () => {
 
@@ -114,6 +113,5 @@ test("extra run conceded per team", () => {
         "Mumbai Indians": 0,
         "Royal Challengers Bangalore": 0,
       };
-    const matchId = getMatchIdByYear(sampleDataMatches,2016);
-    expect(calExtraRunConceded(sampleDataDeliveries, matchId)).toEqual(resultData);
+    expect(calExtraRunConceded(sampleDataDeliveries, sampleDataMatches)).toEqual(resultData);
 });
