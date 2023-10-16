@@ -46,12 +46,10 @@ fs.createReadStream('./src/data/matches.csv')
             .on('end', () => {
 
                 // 3-extra-run-conceded-per-team-2016
-                // let matchId = getMatchIdByYear(matches,2016);
                 const extraRunConceded = calExtraRunConceded(deliveries, matches);
                 fs.writeFileSync(filePath + '/extra-run-conceded-per-team-2016.json', JSON.stringify(extraRunConceded, null, 2));
 
                 // 4-Top-10-economical-bowlers-year-2015
-                // matchId = getMatchIdByYear(matches,2015);
                 const economicalBowler= top10MostEconomicalBowlers(deliveries, matches);
                 fs.writeFileSync(filePath + '/top-10-economical-bowlers-year-2015.json', JSON.stringify(economicalBowler, null, 2));
                 

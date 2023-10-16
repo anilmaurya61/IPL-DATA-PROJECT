@@ -1,28 +1,29 @@
 const getMatchIdByYear = require('../utils/Helpers')
 
 function top10MostEconomicalBowlers(deliveries, matches) {
-    const matchId = getMatchIdByYear(matches,2015)
-    let runsConcededAndBallsBowledByBowler = {};
-    matchId.forEach((id) => {
-        deliveries.forEach((delivery) => {
-            if (delivery.match_id == id) {
 
-                if (runsConcededAndBallsBowledByBowler[delivery.bowler]) {
-                    runsConcededAndBallsBowledByBowler[delivery.bowler]['totalRuns'] = runsConcededAndBallsBowledByBowler[delivery.bowler]['totalRuns'] + Number(delivery.total_runs);
-                }
-                else {
-                    runsConcededAndBallsBowledByBowler[delivery.bowler] = {};
-                    runsConcededAndBallsBowledByBowler[delivery.bowler]['totalRuns'] = Number(delivery.total_runs);
+    const matchId = getMatchIdByYear(matches, 2015);
 
-                    runsConcededAndBallsBowledByBowler[delivery.bowler]['totalFairDeliveries'] = 0
-                }
+    const runsConcededAndBallsBowledByBowler = deliveries.reduce((totalRunsAndFairDeliveries, delivery) => {
+        if (matchId.includes(delivery.match_id)) {
+            const bowler = delivery.bowler;
 
-                if (!(Number(delivery.wide_runs) || Number(delivery.noball_runs))) {
-                    runsConcededAndBallsBowledByBowler[delivery.bowler]['totalFairDeliveries']++;
-                }
+            if (!totalRunsAndFairDeliveries[bowler]) {
+                totalRunsAndFairDeliveries[bowler] = {
+                    totalRuns: 0,
+                    totalFairDeliveries: 0
+                };
             }
-        })
-    });
+
+            totalRunsAndFairDeliveries[bowler].totalRuns += Number(delivery.total_runs);
+
+            if (!(Number(delivery.wide_runs) || Number(delivery.noball_runs))) {
+                totalRunsAndFairDeliveries[bowler].totalFairDeliveries++;
+            }
+        }
+        return totalRunsAndFairDeliveries;
+    }, {});
+
 
     let economicalBowlerList = [];
 
