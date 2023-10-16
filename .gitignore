@@ -130,3 +130,6 @@ dist
 .pnp.*
 
 notes.txt
+
+eslintrc.js
+prettierrc.json
