@@ -25,7 +25,6 @@
   "lint-staged": {
     "**/*.{js,jsx}": [
       "prettier --single-quote --write"
-
     ]
   },
   "author": "",
