@@ -20,7 +20,7 @@ Before you begin, ensure you have the following prerequisites installed on your 
 1. Clone the repository:
 
    ```ruby
-   ruby git clone https://github.com/anilmaurya61/IPL-DATA-PROJECT.git
+   git clone https://github.com/anilmaurya61/IPL-DATA-PROJECT.git
    ```
    
 3. Change into the project directory:
