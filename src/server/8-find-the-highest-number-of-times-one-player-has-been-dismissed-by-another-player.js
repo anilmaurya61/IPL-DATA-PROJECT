@@ -32,7 +32,7 @@ function findHighestDismissals(deliveries) {
     const dismissalsCount = calculateDismissalsCount(dismissalRecords);
     
     let maxDismissals = 0;
-    let highestDismissals = {};
+    let highestDismissals = [];
   
     for (const dismissedBy in dismissalsCount) {
       for (const dismissed in dismissalsCount[dismissedBy]) {
@@ -40,7 +40,9 @@ function findHighestDismissals(deliveries) {
   
         if (count > maxDismissals) {
           maxDismissals = count;
-          highestDismissals = { dismissedBy, dismissed, count };
+          highestDismissals = [{ dismissedBy, dismissed, count }];
+        }else if(count == maxDismissals){
+            highestDismissals.push({ dismissedBy, dismissed, count})
         }
       }
     }

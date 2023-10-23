@@ -50,7 +50,11 @@ function top10MostEconomicalBowlers(deliveries, matches) {
             return 1;
         }
     })
-    return economicalBowlerList.slice(0, 10);
+    let top10MostEconomicalBowlers = {};
+    economicalBowlerList.slice(0, 10).forEach((item)=>{
+        top10MostEconomicalBowlers[item.name] = item.economyRate;
+    })
+    return top10MostEconomicalBowlers;
 }
 
 module.exports = top10MostEconomicalBowlers;

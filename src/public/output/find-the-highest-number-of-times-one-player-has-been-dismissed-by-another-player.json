@@ -1,5 +1,12 @@
-{
-  "dismissedBy": "Z Khan",
-  "dismissed": "MS Dhoni",
-  "count": 7
-}
+[
+  {
+    "dismissedBy": "Z Khan",
+    "dismissed": "MS Dhoni",
+    "count": 7
+  },
+  {
+    "dismissedBy": "PP Ojha",
+    "dismissed": "MS Dhoni",
+    "count": 7
+  }
+]
