@@ -39,3 +39,18 @@ Before you begin, ensure you have the following prerequisites installed on your 
 - To run test cases, you can use the following command:
 	```ruby 
 	npm test
+ 	```
+
+### Displaying Highcharts with `http-server`
+1. Install http-server globally (if you haven't already):
+	```ruby
+	npm install -g http-server
+	```
+2. Change into the project directory:
+	```ruby
+	cd src/public
+	```
+3. Run the Static Server:
+    ```ruby
+    http-server
+    ```
