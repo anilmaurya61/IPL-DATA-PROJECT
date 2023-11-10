@@ -317,7 +317,7 @@ async function createChartBowlerWithBestEconomyInSuperOvers(bowlerWithBestEconom
             }
         },
         series: [{
-            name: 'Bowler Names',
+            name: 'Economy Rates',
             data: [economyRates]
         }]
     });
